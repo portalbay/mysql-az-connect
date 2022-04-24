@@ -3,5 +3,13 @@
 
 ## Linux Syntax below
 ```
-mysql -h host@domain.xyz -u user_name -p --ssl 
+#Load CSV (Ubuntu WSL)
+mysql  --local-infile=1 --host=<server_here>.mysql.database.azure.com --database=<db_name> --user=<user_id> --password <load.sql
+
+#Connect (Ubuntu WSL or Win 11)
+mysql  --host==<server_here>.mysql.database.azure.com --database=<db_name> --user=<user_id> --password
+
+
+#Legacy
+##mysql -h host@domain.xyz -u user_name -p --ssl 
 ```
